@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Animations</title>
+	<style>
+		body
+		{
+	      background: linear-gradient(45deg,blue,purple,violet); 
+	      margin: 50px auto;
+
+		}
+		div
+		{
+			position: relative;
+			top:250px;
+			left: 100px;
+			text-align: center;
+		}
+		div>span
+		{
+			
+			color: white;
+			width: 30px;
+			height: 30px;
+			display: inline-block;
+	        margin: 20px;
+	        border-radius: 50%;
+	        box-shadow: 0 0 10px white;
+	        padding: 20px;
+	        animation: round 2s linear 0s infinite normal;
+		}	
+		div>span:first-child
+		{
+           background-color: blue;
+           animation-delay: 0.2s;
+		}
+		div>span:nth-child(2)
+		{
+			background-color: deeppink;
+			animation-delay: 0.4s;
+		}
+		div>span:nth-child(3)
+		{
+			background-color:black;
+			animation-delay: 0.6s;
+			
+		}
+		div>span:nth-child(4)
+		{
+			background-color:cyan;
+			animation-delay: 0.6s;
+			
+		}
+		div>span:nth-child(5)
+		{
+			background-color:red;
+			animation-delay: 0.4s;
+			
+		}
+		div>span:last-child
+		{
+			background-color:green;
+			animation-delay: 0.2s;
+		}
+		@keyframes round
+		{
+			0%,100%
+			{
+				transform: translateY(-100px);
+			}
+			50%
+			{
+				transform: translateY(100px);
+			}
+		}
+	</style>
+</head>
+<body>
+     <div>
+     	<span>S</span>
+     	<span>T</span>
+     	<span>N</span>
+     	<span>K</span>
+     	<span>J</span>
+     	<span>7</span>
+     	
+     </div>
+</body>
+</html>
